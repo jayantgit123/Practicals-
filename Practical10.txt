@@ -1,0 +1,19 @@
+>> Practical 10
+Understand Continuous Monitoring with Cloud Watch Configuration and Create EC2 CPU Alert + Budget Alerm of rs 100
+
+>> EC2 > Advance Details > Detailed CloudWatch monitoring > Enable > Launch Instance 
+>> Instance > Monitoring > Graph 3 dots > View matrices > Matrices will be viewed in Cloud Watch
+>> Bell Symbol > Create Alarm > Set Threshold > Next 
+>> Create New Topic > Give name and Email ID > Create Topic > Next 
+>> Create Alarm > Alarm will be visible in CW DashBoard
+>> Open SNS in new Tab > New Topic will be visible in Dashboard of SNS
+>> Subscription Confirmation Email will be send to an Email Address > Confirm Subscription
+>> Topic in SNS will show Confirmed 
+>> EC2 > Monitoring > Add to Dashboard > Create DashBorad 
+>> CW > DashBorad > View Graphs
+>> To Set Budget Alarm
+>> URL : https://ap-south-1.console.aws.amazon.com/cloudwatch/home?region=ap-south-1#metricsV2?graph=~(metrics~(~(~'AWS*2fBilling~'EstimatedCharges~'Currency~'USD~(visible~false)))~legend~(position~'bottom)~yAxis~(left~(showUnits~false~label~'USD))~region~'ap-south-1~liveData~false~start~'-P6M~end~'POD-~title~'~view~'timeSeries~stacked~false~stat~'Maximum~period~21600)
+>> Bell > Create Alarm > Set Threshold > Create New Topic > Name and Email ID 
+>> Topic visible in SNS > Sunscription mail in Mail ID 
+>> CW > Create Alarms > Next > New Alarm > Create Alarm
+>> Delete everything i.e. Instance, CW Alarms, SNS topics 
