@@ -1,0 +1,20 @@
+>> Practical 18,19,20
+Pull Image (Ubuntu/Nginx) create your first hello-world container and understand all steps of docker architecture , Jenkins 
+
+
+>> Host Ubuntu Machine 
+>> #sudo -i# > #apt-get update# > #apt install docker.io#
+>> #docker --version# > #docker help# > #docker ps -a# > #docker images#
+
+>> Docker Hub > Hello World 
+>> #docker pull hello-world# > #docker images# > #docker run hello-world# > #docker ps -a#
+
+>> Docker Hub > ubuntu > #docker pull ubuntu# > #docker images# > #docker run -it ubuntu# > CLI will be redirected insite Ubuntu Container > #exit# > CLI will come back to instance OS > #docker ps -a# > #docker run -it ubuntu /bin/bash# > #apt update# , #apt install git-all# (These CMDs will run inside ubuntu container) > #exit#
+
+>> Docker Hub > nginx > #docker pull nginx# > #docker run nginx# > #docker run -p 80:80 nginx# > Use Browser to get Nginx at IP:80 
+>> #mkdir -p /docker-nging/html# > #cd /docker-nginx/html# > #vi index.html# > #<h1>Hello from NGINX</h1># > exit > :wq
+>> #docker run --name docker-nginx -p 80:80 -d -v /docker-nginx/html:/usr/share/nginx/html nginx#
+>> Open Browser to get get Index.html page > IP:80
+
+>> Docker Hub > jenkins > #docker pull jenkins/jenkins:lts# > #docker run -it -d -p 8080:8080 jenkins/jenkins:lts# > get Jenkins on IP:8080 (ensure securiy group allow port 8080 traffic)
+>> #docker exec -it <container ID> bin/bash# > #cat /var/jenkins_home/secrets/initialAdminPassword# > get pass and start using Jenkins 

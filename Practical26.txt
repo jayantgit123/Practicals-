@@ -1,0 +1,43 @@
+>> Practical 26
+Create complete infrastructure for Ansible Master and Target Machine and Run Ansible Playbook and Ansible Roles
+
+
+>> Creating multiple Instances will charge more hence we are creating single instance and installing Docker to get many virtual machines 
+>> Creat a bigger instance on GCP - 1 core 8 GB , 20 GB Storage , Ubuntu 
+>> Instance CLI > #sudo -i# > #apt-get update && apt install docker.io -y# > #docker -v#
+>> #docker run -itd --name ansible_master ubuntu /bin/bash# > #docker ps#
+>> #docker run -itd --name target1 ubuntu /bin/bash# > #docker ps#
+>> #docker run -itd --name target2 ubuntu /bin/bash# > #docker ps#
+
+>> Go inside ansible_master VM
+>> #docker exec -it ansible_master bash# > #apt update# > #apt install python-is-python3 ansible vim iputils-ping openssh-client -y# > #ansible --version# 
+>> If conf is none (Known Bug) > #apt remove ansible -y# > #apt update# > #apt install software-properties-common# >  #add-apt-repository --yes --update ppa:ansible/ansible# > #apt install ansible# > #ansible --version#
+>> #exit#
+
+>> Go inside targer1 VM
+>> #docker ps# > #docker exec -it target1 bash# > #apt update# > #apt install vim python-is-python3 iputils-ping openssh-client -y# > #apt-get install openssh-client openssh-server -y#
+>> #cd /etc/ssh# > #ls# > #vi sshd_config#
+>> Uncomment the parameter and modify the permission to yes  -  PermitRootLogin yes and PasswordAuthentication yes > save 
+>> #service ssh status# > #service ssh start# > #service ssh status#
+>> #passwd root# (To change root password)
+>> #exit#
+>> #docker ps# > #docker inspect <container id># (To get the IP of target1)
+
+>> Go inside ansible_master VM
+>> #docker exec -it ansible_master bash# > #cd /etc/ansible/# > #ls# > #vi hosts# > add the target1 IP 
+>> Generate the ssh key from the ssh-keygen command > #ssh keygen# > 3 Times Enter 
+>> Copy the generated ssh keys from ansible_master to target machine > #ssh-copy-id root@172.17.0.3# > #yes# > give root password of target1
+>> We should be able to connect via target machine from ansible_master > #ssh root@172.17.0.3#
+>> Verify nginx is there or not > #service nginx status# > #exit#
+
+>>  #cd /etc/ansible# > #vi  installnginx.yaml# > save the below code 
+---
+- hosts: all
+  tasks:
+    - name: ensure nginx is at the latest version
+      apt: 
+        name: nginx
+        state: latest
+>> Execute playbook > #ansible-playbook installnginx.yaml# > #exit#
+
+>> #docker exec -it target1 bash# > #service nginx status#

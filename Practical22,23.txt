@@ -1,0 +1,25 @@
+Practical 22,23
+>> Google Kubernetes engine creation + Kubernetes creation on windows Local Machine via Docker Desktop , POD creation + Service Creation as a Load Balancer + Replica set creation + Deployment Creation on GKE 
+
+>> GCP Console > Kubernetes Engine > Enable K8s API 
+>> Cluster > Create > Switch to standard Cluster option > Name > Node pool=3 > Boot Disk=50 > Create 
+>> Verift in K8s Cluster Console and VM Instanace Console of GCP 
+>> Cluster > Connect > Follow instructions to install kubectl in cloud shell 
+>> #kubectl cluster-info# > #kubectl config get-contexts#
+>> #kubectl get ns# > #kubectl create ns dev# > #kubectl get ns#
+>> #vi nsdev.yaml# > 
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: nsdev
+> #kubectl create -f nsdev.yaml# > #kubectl get ns# 
+>> #kubectl get all# > #kubectl get no# > #kubectl get po# > #kubectl get deploy# > #kubectl get rs# > #kubectl get svc#
+>> #kubectl run ngunx --image=nginx:1.9.12# > #kubectl get po# > #kubectl get svc#
+>> #kubectl expose po ngunx --port=80 --type=LoadBalancer# > #kubectl get svc#
+>> Take external IP and try in Browser 
+>> #kubectl exec -it ngunx bash# > #exit#
+>> #kubectl create deployment nginxdeploy --image=nginx# > #kubectl get deploy#
+>> UI > Workload > Action > Scale Edit Replicas=3 > #kubectl get deploy# 
+>> Delete the previous POD as is running on port 80 > Deployment > Action > Expose > Try in Browser 
+>> #kubectl get po# > #kubectl delete po <pod name># > #kubectle get po#

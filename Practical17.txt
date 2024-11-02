@@ -1,0 +1,12 @@
+>> Practical 17
+Jenkins Master Slave Configuration - Jenkins with slave agent / Jenkins with Windows Slave agent and to restrict the job on perticular agent
+
+>> Jenkins > Manage Jenkins > Nodes > New Node > Permanent Agent 
+>> Remote Root directory > /home/ubuntu 
+>> Slave Agent will be offline 
+>> Security > Agent > TCP port for inbound agent > Random (Select specific port if you want to run agent on specific node , Remember that port should be open on Jenkins Server , Random is selected for those Servers where all port traffic can flow freely)> Save 
+>> Slave Agent will be offline again
+>> Click on the Slave Node > Follow the Steps as per the OS > Agent will be online 
+
+>> Jenkins UI > Freestyle > Restrict where this project can be run > Give Slave Node Name > give GIT Repo > Shell Cmds to execute (javac and java)
+>> Build will be executed on slave node as verified from logs 

@@ -1,0 +1,10 @@
+>> Practical 24
+Create 3 Nodes K8s Engine on GCP with E-commerce Microservice base application deployment
+
+>> Create GKE cluster > connect 
+>> GitHub > https://github.com/GoogleCloudPlatform/microservices-demo
+>> #mkdir practical24# > #ls# > #git clone https://github.com/GoogleCloudPlatform/microservices-demo#
+>> #cd microservices-demo# > #cd release# > #kubectl apply -f kubernetes-nenifests.yaml#
+>> GKE UI > Workload > Frontend > get frontend external IP > use browser to get Webapp
+>> Try deleting pods and get the pods rehealed automatically 
+>> kubernetes-nenifests.yaml is the yaml code file that contains all the configuration of kubernetes deployment in code 

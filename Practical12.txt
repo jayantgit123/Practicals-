@@ -1,0 +1,16 @@
+>> Practical 12
+Push Code from local System to GitHub via GIT as a Developer
+
+>> GitBash in Folder > Give First time Identity > #git config --global user.name "Jayant Srivastav"# > #git config --global user.email "jsjayantsrivastav@gmail.com"#
+>> GitHub DashBoard > New > Give Details but do not include README file 
+>> GitBash in the folder > #ls# > #touch file1# > #echo "Jayant Practical12" >> README.md# 
+>> Make one more .txt file 
+>> #git init# > #git status# > #git add README.md# > #git status# > #git add *# > #git status#
+>> #git commit -m "First Commit"# >> #git branch -M main# > #git remote add origin https://github.com/jayantgit123/Practical12.git#  > #git push -u origin main# 
+>> #git rm file1# > #git log# 
+>> GitHub DashBoard > Main > Create New Branch 
+>> Edit any of the file > Commit Changes > Changes are made in new branch only and main branch remain unaffected 
+>> Go to main Branch > Compare and pull request > Create Pull Request 
+>> Go to main Branch > Pull Request > Merge Pull Request > Changes will be merged in main Branch 
+>> Explore various options from Top such as Issues, Pull requests, Actions etc
+>> Repo for cmds > github.com/CloudDevOpsHub/Batch31/new/main

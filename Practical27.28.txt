@@ -1,0 +1,13 @@
+>> Practical27,28
+Promotheus and grafana installation on K8s cluster via Helm , Operations / Multiple Dashboard creation in Grafana
+
+>> Create K8s cluster > Create > Standard 
+>> Connect to K8s Cluster CLI 
+>> #kubectl get ns# > #kubectl create ns monitor# > #kubectl get ns#
+>> Helm code is available on https://github.com/prometheus-community/helm-charts/tree/main/charts/kube-prometheus-stack
+>> Add Helm Repo > #helm repo add prometheus-community https://prometheus-community.github.io/helm-charts# > #helm repo update#
+>> Install the Grafana and Promothus >  #helm install kube-prometheus-stack prometheus-community/kube-prometheus-stack --namespace monitor#
+>> #kubectl get po -n monitor#
+>> create a service of grafana > #kubectl expose deployment kube-prometheus-stack-grafana --port=3000 --target-port=3000 --name=grafana --type=LoadBalancer -n monitor#
+>> #kubectl get svc -n monitor# > get external IP:3000 > credentials - admin/prom-operator
+>> Explore different options in Grafana UI 

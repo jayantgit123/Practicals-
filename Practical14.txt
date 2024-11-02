@@ -1,0 +1,13 @@
+>> Practical 14
+Pulling Java Code from Git and compile via Jenkins, Building via Jenkins, Create Jenkins CI 
+
+>> Download jenkins for Windows LTS (Jenkins have Java Dependency so Java is Required to be installed) > Open in Browser > localhost:8080 > Password from the file indicated 
+>> Create Repo containing simple Java Program > https://github.com/jayantgit123/Prac14JavaCodeCI
+>> Jenkins UI > New Item > Free Style Job > Name > Ok
+>> General > SCM > Give URL for Git Repo (https://github.com/jayantgit123/Prac14JavaCodeCI) > Change Branch to main > Build Steps > Execute Windows Batch command > #javac helloworld.java# & #java simple# > Save  
+>> Build Now > View Logs 
+
+>> As this time Jenkins is installed on Windows Machine so Windows Batch command should be selected else in Linux case we have to select the Shell command in Build Steps
+>> Git tool must be installed in the machine , In jenkins Master Configuration Git path must be indicated as (C:\Program Files\Git\bin\git.exe)
+
+>> Configuration > Poll SCM > * * * * * (This Cron Expression means every second) > Commit changes in the helloworld.java file in GitHub > Build will automatically triggered after 1 minutes 

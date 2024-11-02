@@ -1,0 +1,80 @@
+>> Practical 16
+Run a Groovy Code and create Pipeline Job in Jenkins - stages/stage/step show in Jenkins server 
+
+
+>> Scripted Pipeline - Groovy code is written inside the Jenkins UI 
+>> Declarative Pipeline - Groovy Code is writtne in the Jenkins Files and is checked from SCM 
+
+>> Jenkins UI > New > Pipeline 
+>> Groovy code from (https://github.com/CloudDevOpsHub/Batch-31/blob/main/jenkinspipeline)
+>> Build Now 
+
+>> Code 
+
+pipeline {
+     agent any
+     stages{
+        stage(‘’){
+          steps{
+
+           }
+        }
+     }
+ }
+
+--------------------------------------------
+
+Window's
+
+pipeline {
+agent any
+
+    stages {
+        stage('Git clone') {
+            steps {
+            git branch: 'main', url: 'https://github.com/DevSecOpsG/helloworldsimplejavaprogram'
+            }
+        }
+        stage('Build'){
+            steps{
+            bat '''set path=C:\\Program Files\\Java\\jdk1.8.0_311\\bin\\
+            javac helloworld.java'''
+            }
+        }
+		stage('Run'){
+            steps{
+            bat 'java Simple'
+            }
+        }
+   }
+}
+
+
+
+
+------------------------
+
+for linux 
+
+
+pipeline {
+agent any
+
+    stages {
+        stage('Git clone') {
+            steps {
+            git branch: 'main', url: 'https://github.com/DevSecOpsG/helloworldsimplejavaprogram'
+            }
+        }
+        stage('Build'){
+            steps{
+            sh 'javac helloworld.java'
+            }
+        }
+        stage('Run'){
+            steps{
+            sh 'java Simple'
+            }
+        }
+    }
+}

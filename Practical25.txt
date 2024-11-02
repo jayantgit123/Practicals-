@@ -1,0 +1,18 @@
+>> Practical 24
+Create AWS Resource user creation + EC2 + S3 + VPC from HCL language code via Terraform , Init/Plan/Apply
+
+>> cmd > #terraform#
+>> Google > Download Terraform > Download Binary for Windows > Unzip > Go inside the folder > cmd in the folder > #terraform#
+>> https://registry.terraform.io/providers/hashicorp/aws/latest/docs (HCL templates will be present here)
+>> cmd > #aws# 
+>> Download AWS CLI for windows > Install it > cmd > #aws#
+>> AWS Console > IAM > Users > Create User > Open user > Create Access Key > Use Case > CLI > Create access key > get Access Key and Secret Access key 
+>> cli > #aws configure# > provide access key and secret access key > enter 
+>> https://github.com/DevSecOpsG/terraformcode > create new folder > git bash here > clone the code > open the code visual studio code > edit code as per requirement > save 
+>> Create bin folder in C drive > Add bin folder path to environment variables 
+>> Go inside the folder of main.tf file (IAM user creation) > Git Bash There > #terraform init# > .terraform folder will be created 
+>> #terraform plan# > Info will be displayed 
+>> AWS IAM Console > Existing user > Add Permission > Attach policies directly > IAMFullAccess > Add 
+>> #terraform apply# > User will be created 
+>> #terraform destroy# > User will be deleted 
+>> Try same for EC2,S3 etc

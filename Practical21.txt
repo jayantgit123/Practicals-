@@ -1,0 +1,22 @@
+>> Practical 21
+Docker file creation and Create/build your own NGINX application TAG the image and login and push it to Docker HUB and verify , Some more Docker Container Troubleshooting Cmds 
+
+
+>> Host Ubuntu Instance > Install Docker Engine > #sudo -i# > #curl -fsSL https://get.docker.com -o get-docker.sh# > #sh get-docker.sh#
+>> DockerHub Account - jsjayantsrivastav/Dockerhub@#321
+>> mkdir Practical19 > #vi Dockerfile# (Inside New Directory)> 
+FROM ubuntu
+MAINTAINER jsjayantsrivastav@gmail.com
+RUN apt-get update
+RUN apt-get install nginx -y
+CMD ["echo","Image Created"]
+>> #docker build -t prac19nginx .# 
+>> #docker tag <image ID> jayantsrivastav/practical19hub:latest# > #docker images#
+>> #docker login#
+>> #docker push <NewImageName># > Check in docker hub
+
+>> #docker pull nginx# > #docker images# > #docker run -p 80:80 nginx# > Access it via Browser IP:80
+>> #docker commit <container image> <New image name># 
+>> #docker tag <image ID> jayantsrivastav/practical19hub:latest# > #docker images#
+>> #docker login#
+>> #docker push <NewImageName># > Check in docker hub

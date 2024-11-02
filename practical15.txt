@@ -1,0 +1,19 @@
+>> Practical 15
+Java Spring boot Application with Maven integration with CI configuration create a build 
+
+
+>> Find Spring Boot Application Code here - https://github.com/DevSecOpsG/Pet-application-ci-maven 
+>> Download Maven for Windows > Unzip it > Add PATH variable of Mavan to System > E:\DevOps\Practical15\Maven\Binary\apache-maven-3.9.9-bin\apache-maven-3.9.9\bin
+>> Clone the above Code in Folder of local machine > cmd to the code location > #mvn -version# > #mvn package#
+>> .jar file will be created and location is indicated on cmd screen 
+>> cd to .jar file location > #java -jar <.jar file name>.jar --server.port=<Port> (Any Port)
+>> Browser > localhost:<port> > application would be up and running
+
+>> Install Java , Jenkins and Maven on VM from any cloud 
+
+>> Install Java , Jenkins and Maven on Windows local Machine 
+>> Add Maven and Java Path in PATH variable of Windows - E:\DevOps\Practical15\Maven\Binary\apache-maven-3.9.9-bin.zip\apache-maven-3.9.9\bin
+>> Junkins UI > manage Jenkins > Tools > Add Maven > Add Maven location - E:\DevOps\Practical15\Maven\Binary\apache-maven-3.9.9-bin.zip\apache-maven-3.9.9
+>> Jenkins UI > New > Give URL of Git for Sourcr Code > Change Branch to main > Build Step #mvn package# > Save > Build Now 
+>> After Build is completed it will give the location of .jar file that is C:\ProgramData\Jenkins\.jenkins\workspace\Project15\target\spring-petclinic-2.3.1.BUILD-SNAPSHOT.jar
+>> Follow above process to run the application on localhost via Browser 

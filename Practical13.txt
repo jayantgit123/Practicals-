@@ -1,0 +1,18 @@
+>> Practical 13
+Simple Java Code Execution (Build/Compile) Manually + Visual Studio Code, Jenkins Installation on Ubuntu  
+
+
+>> GCP Console > VM Instance > Create Instance > Ubuntu > Allow HTTP and HTTPS > Create 
+>> SSH into the Machine > #sudo apt update# > #java -version# > #sudo apt install openjdk-11-jdk-headless# (Newer Version of Java is Needed as per compatibility with Jenkins New version)> #java -version# 
+>> Go to google and search "Jenkins Installation on Ubuntu" > #sudo wget -O /usr/share/keyrings/jenkins-keyring.asc \ https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key# > #echo "deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc]" \ https://pkg.jenkins.io/debian-stable binary/ | sudo tee \ /etc/apt/sources.list.d/jenkins.list > /dev/null# 
+>> #sudo apt update# > #sudo apt-get install jenkins# 
+>> Ensure that outbound and inbound rule of security group of instance is configured for port 8080 (Or whatever port the jenkins is supposed to run)
+>> Browser > IP:8080 > get password from file indicated in GUI > Login to Jenkins Interface > Install Suggested Plugins > First time Setup > Junkins Interface 
+
+>> Download Visual Studio Code > open Folder with Code > Create New File with name helloworld.java > Give code as below > Save 
+class simple{
+    public static void main(String args[]){
+        System.out.println("Hello friends this is Jayant");
+    }
+}
+>> Open Terminal > #javac helloworld.java# (If javac cmd not recognised then install JDK and set PATH variable for bin folder of Java) > simple.class file will be created (Simple.class file is a Byte Code that is CIL) > #java Simple# (It will give the output of the code) 

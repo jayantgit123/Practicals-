@@ -1,0 +1,12 @@
+>> Practical 5 
+Create AWS S3 Static Website Hosting and Real Time Example (Create your Online Resume)
+
+>> Create Bucket 
+>> Bucket > Properties > Static Website hosting > Enable 
+>> Specify the home or default page of the website > index.html > Save Changes 
+>> Download resume.css and index.html page from https://github.com/CloudDevOpsHub/Batch-31/blob/main
+>> Upload both the above files in Bucket 
+>> Unblock all public access under permissisons 
+>> Allow ACL under permissions
+>> Make public both the objects that is index.html and resume.css > Actions > Make Public
+>> Take the url of static website > View the Resume 

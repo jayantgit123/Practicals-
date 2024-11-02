@@ -1,0 +1,8 @@
+>> Practical 11
+Clone Actual Code from Github to local (Git Clone and Git Fork)
+
+>> Make account in Github > Download Git in Local Machine 
+>> Github dashBorad > Create a new repository > Name > Add Readme file > Create (Readme file is always a discription file)
+>> Edit Readme file and Commit Changes 
+>> Search videolan/vlc in DashBoard > Click Fork > Copy will be created under own Account 
+>> Go to any Repo > https://github.com/nginx/nginx > Code > Copy URL > Go To any Folder from File Manager > Right Click > Open GitBash here > #mkdir ClonePractical# > #git clone https://github.com/nginx/nginx.git# > Code will be downloaded in the local Machine 
