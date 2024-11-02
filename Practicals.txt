@@ -1,0 +1,71 @@
+>> Practical 1 
+EC2-Creating and login to Windows Instance 
+
+>> Practical 2
+EC2-Configure Apache/Nginx web server in Linux Instance Connected to Mobaxtreme
+
+>> Practical 3
+Create ELB and distribute load among 2 EC2
+
+>> Practical 4 
+Configure S3 Bucket, Understand S3 classess and Lifecycles Rules 
+
+>> Practical 5 
+Create AWS S3 Static Website Hosting and Real Time Example (Create your Online Resume)
+
+>> Practical 6 
+RDS (Postgress) Database creation explain the possible options
+
+>> Practical 7
+Create a EC2 instance (SQL Proxy Server) with SSH key connect with Mobaxtream and connect RDS instance MYSQL via End Point like a Real time approach 
+
+>> Practical 8 
+Creation of VPC / Subnets / Routes / Security Groups and EC2 instance in Private VPC
+
+>> Practical 9 
+Connect 2 clouds with VPC peering
+
+>> Practical 10
+Understand Continuous Monitoring with Cloud Watch Configuration and Create EC2 CPU Alert + Budget Alerm of rs 100
+
+>> Practical 11
+Clone Actual Code from Github to local (Git Clone and Git Fork)
+
+>> Practical 12
+Push Code from local System to GitHub via GIT as a Developer 
+
+>> Practical 13
+Simple Java Code Execution (Build/Compile) Manually + Visual Studio Code , Jenkins Installation on Ubuntu
+
+>> Practical 14
+Pulling Java Code from Git and compile via Jenkins, Building via Jenkins, Create Jenkins CI 
+
+>> Practical 15
+Java Spring boot Application with Maven integration with CI configuration create a build 
+
+>> Practical 16
+Run a Groovy Code and create Pipeline Job in Jenkins - stages/stage/step show in Jenkins server 
+
+>> Practical 17
+Jenkins Master Slave Configuration - Jenkins with slave agent / Jenkins with Windows Slave agent and to restrict the job on perticular agent
+
+>> Practical 18,19,20
+Pull Image (Ubuntu/Nginx) create your first hello-world container and understand all steps of docker architecture , Jenkins 
+
+>> Practical 21
+Docker file creation and Create/build your own NGINX application TAG the image and login and push it to Docker HUB and verify , Some more Docker Container Troubleshooting Cmds
+
+>> Practical 22,23
+Google Kubernetes engine creation + Kubernetes creation on windows Local Machine via Docker Desktop , POD creation + Service Creation as a Load Balancer + Replica set creation + Deployment Creation on GKE 
+
+>> Practical 24
+Create 3 Nodes K8s Engine on GCP with E-commerce Microservice base application deployment 
+
+>> Practical 25
+Create AWS Resource user creation + EC2 + S3 + VPC from HCL language code via Terraform , Init/Plan/Apply
+
+>> Practical 26
+Create complete infrastructure for Ansible Master and Target Machine and Run Ansible Playbook and Ansible Roles 
+
+>> Practical 27,28
+Promotheus and grafana installation on K8s cluster via Helm , Operations / Multiple Dashboard creation in Grafana
