@@ -1,0 +1,11 @@
+>> Practical 2
+EC2-Configure Apache/Nginx web server in Linux Instance Connected to Mobaxtreme
+
+>> Launch Instance with Amazom Linux AMI 
+>> Generate .ppk Key 
+>> Upload .ppk key in Mobaxtreme > Advance > Private Key Upload 
+>> Login with ec2-user 
+>> #sudo -i# , #yum update# , #yum install nginx# , #systemctl status nginx# , #systemctl start nginx#
+>> Get Nginx via Public IP
+>> Nginx Port :80
+

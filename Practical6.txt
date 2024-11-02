@@ -1,0 +1,4 @@
+>> Practical 6 
+RDS (Postgress) Database creation explain the possible options
+
+>> RDS > Create Database > PostgreSQL > Free Tier > Auto Gen Pass > Create DB

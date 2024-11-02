@@ -1,0 +1,12 @@
+>> Practical 3
+Create ELB and distribute load among 2 EC2
+
+>> Create 2 instances 
+>> Connect > EC2 instance connect 
+>> Install and start Nginx 
+>> Edit the index.html file on both the instances (/usr/share/nginx/html)
+>> Load Balancer > Classic LB
+>> Give the security group from Instance Details 
+>> Add both the instances and create LB 
+>> Take DNS name of LB and access it 
+>> It will route traffic to both the instances in Round robin

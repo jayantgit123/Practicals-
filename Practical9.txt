@@ -1,0 +1,15 @@
+>> Practical 9 
+Connect 2 clouds with VPC peering
+
+>> Security Groups operate at instance level while NACL operates at VPC/Subnet level 
+>> Security Layers = Security Group (Instance level) > VPC (Virtual private Network in Cloud) > NACl (VPC/Subnet level)
+>> VPC peering can be done VPCs of different accoung as well 
+>> VPC peering is unidirectional 
+>> Create 2 VPCs 
+>> Left Pane > Peering Connections > Create Peering Connection 
+>> Requester > 1st VPC 
+>> Accepter > 2nd VPC
+>> Peering Connection > Actions > Accept Request 
+>> VPC peering connection established from VPC1 to VPC2 
+>> If we want any Resource in private subnet to communicate with Public Resource then we have to use Public NAT
+>> If we want any Resource in private subnet to communicate with Private Resource then we have to use Private NAT

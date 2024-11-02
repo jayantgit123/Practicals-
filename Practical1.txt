@@ -1,0 +1,8 @@
+>> Practical 1 
+EC2-Creating and login to Windows Instance 
+
+>> Launch Instance 
+>> Select windows OS 
+>> In Keys > Create new key > RSA (.pem) > Download file
+>> Instance > Connect > RDP Client > Get password > upload file > get password 
+>> Login via RDP

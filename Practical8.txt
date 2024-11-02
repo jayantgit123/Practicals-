@@ -1,0 +1,8 @@
+>> Practical 8 
+Creation of VPC / Subnets / Routes / Security Groups and EC2 instance in Private VPC
+
+>> VPC > Create VPC > VPC and More 
+>> On right hand side we will get graph for VPC, Subnet, Routes, Network connections 
+>> From left pane we can customise as according to our requirement 
+>> Create VPC > View VPC 
+>> We can host instance, RDS etc inside our created VPC and Subnet 

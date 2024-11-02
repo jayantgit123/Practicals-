@@ -1,0 +1,8 @@
+>> Practical 4 
+Configure S3 Bucket, Understand S3 classess and Lifecycles Rules
+
+>> S3 > create Bucket > Unblock Public Access > Create Bucket 
+>> Upload a file
+>> management > Lifecycle Rule > Create rules bases on days 
+>> File > Action > Make Public using Acl 
+>> File URL > View File 
